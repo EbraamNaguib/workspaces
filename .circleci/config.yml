@@ -16,9 +16,9 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - checkout
+      #- checkout
       - attach_workspace:
-            at: /
+            at: /home/circleci/project
       - run:
           name: "print data persistent in a text file"
           command: "cat  output.txt"
